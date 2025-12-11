@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Linux Log Analyzer - DevOps Project</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 2rem; max-width: 800px; margin: auto; background:#f9f9f9; color:#222; }
+    pre { background:#222; color:#eee; padding:1rem; overflow:auto; }
+    .card { background:#fff; padding:1rem 1.2rem; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.06); }
+    a.button { display:inline-block; padding:8px 14px; background:#007bff; color:#fff; text-decoration:none; border-radius:6px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Linux Log Analyzer</h1>
+    <p>Automated log analysis and report generator using GitHub Actions (CI). This project demonstrates Linux commands, shell scripting, Git, CI/CD and deployment to GitHub Pages.</p>
+
+    <h3>Latest Report</h3>
+    <p>Click to download the latest generated <code>report.txt</code> (automatically updated by CI).</p>
+    <p><a class="button" href="report.txt" download>Download Report</a></p>
+
+    <h3>How it works</h3>
+    <ol>
+      <li>analyze.sh parses system logs and creates <code>report.txt</code></li>
+      <li>GitHub Actions runs the script on a schedule</li>
+      <li>Report is uploaded and published to GitHub Pages</li>
+    </ol>
+
+    <h3>Files in this repo</h3>
+    <ul>
+      <li><code>analyze.sh</code> - main script</li>
+      <li><code>.github/workflows/report.yml</code> - CI workflow</li>
+      <li><code>index.html</code> - project page</li>
+      <li><code>Dockerfile</code> (optional) - static-site container</li>
+      <li><code>README.md</code> - this guide</li>
+    </ul>
+
+  </div>
+</body>
+</html>
