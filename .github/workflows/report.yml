@@ -19,7 +19,7 @@ jobs:
         run: ./analyze.sh
 
       - name: Upload report artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: log-report
           path: report.txt
