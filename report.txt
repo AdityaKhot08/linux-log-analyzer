@@ -1,0 +1,2 @@
+===== Sample Report =====
+This is a sample report included for demo purposes.
